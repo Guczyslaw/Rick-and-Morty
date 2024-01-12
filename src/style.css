@@ -19,7 +19,7 @@ body {
 
 main {
   padding-top: 30px;
-  width: 1300px;
+  max-width: 1300px;
   margin: 0 auto;
 }
 
@@ -64,14 +64,36 @@ li strong {
   margin-right: 2px;
 }
 
-.green{
+.green {
   background-color: green;
 }
 
-.red{
+.red {
   background-color: red;
 }
 
-.yellow{
+.yellow {
   background-color: yellow;
+}
+
+@media screen and (max-width: 922px) {
+  .character {
+    display: block;
+    width: 98%;
+  }
+}
+
+@media screen and (max-width: 496px) {
+  .flex {
+    display: block;
+  }
+  .character {
+    width: 280px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
+  .avatar {
+    border-radius: 15px 15px 0 0;
+  }
 }
